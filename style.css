@@ -50,7 +50,7 @@ body {
     text-align: center;
 }
 
-.imagemProduto{
+/* .imagemProduto{
     width: 400px;
 }
 
@@ -71,8 +71,20 @@ body {
     width: 400px;
     text-align: start;
 
-}
+} */
 
+.boxes{
+    display: flex;
+    flex-direction: column;
+}
+.boxProduto{
+    display: flex;
+    background-color: rgba(37, 37, 37, 0.8);
+    width: 850px
+}
+.imagemProduto{
+    width: 400px;
+}
 button {
     background-color: var(--corBottoesH2Texto);
     padding: 15px;
