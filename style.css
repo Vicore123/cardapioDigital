@@ -50,41 +50,29 @@ body {
     text-align: center;
 }
 
-/* .imagemProduto{
-    width: 400px;
-}
-
-.boxProduto{
-    background-color: rgba(37, 37, 37, 0.8);
-    width: 850px;
-    margin: auto;
-    border-radius: var(--arredondamentoBordas);
-    
-}
-
-.boxImg, .boxTexto{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.boxTexto{
-    width: 400px;
-    text-align: start;
-
-} */
 
 .boxes{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .boxProduto{
     display: flex;
     background-color: rgba(37, 37, 37, 0.8);
-    width: 850px
+    width: 850px;
+    margin: 0px 0px 40px 0px;
+    border-radius: var(--arredondamentoBordas);
+    
 }
 .imagemProduto{
     width: 400px;
 }
+
+.boxTexto{
+    text-align: start;
+    width: 400px;
+}
+
 button {
     background-color: var(--corBottoesH2Texto);
     padding: 15px;
