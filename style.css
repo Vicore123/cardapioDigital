@@ -62,10 +62,13 @@ body {
     width: 850px;
     margin: 0px 0px 40px 0px;
     border-radius: var(--arredondamentoBordas);
+    align-items: center;
+    justify-content: center
     
 }
 .imagemProduto{
     width: 400px;
+    height: 315px;
 }
 
 .boxTexto{
