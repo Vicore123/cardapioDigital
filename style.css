@@ -60,6 +60,7 @@ body {
     display: flex;
     background-color: rgba(37, 37, 37, 0.8);
     width: 850px;
+    height: 300px;
     margin: 0px 0px 40px 0px;
     border-radius: var(--arredondamentoBordas);
     align-items: center;
@@ -68,7 +69,6 @@ body {
 }
 .imagemProduto{
     width: 400px;
-    height: 315px;
 }
 
 .boxTexto{
@@ -80,6 +80,6 @@ button {
     background-color: var(--corBottoesH2Texto);
     padding: 15px;
     border:none;
-    border-radius: var(--arredondamentoBordas);
+    border-radius:  var(--arredondamentoBordas);
     width: 150px;
 }
