@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    font-family: var(--minhaFonte);
+    /* font-family: var(--minhaFonte); */
 }
 
 :root{
@@ -64,7 +64,7 @@ body {
     margin: 0px 0px 40px 0px;
     border-radius: var(--arredondamentoBordas);
     align-items: center;
-    justify-content: center
+    justify-content: center;
     
 }
 .imagemProduto{
