@@ -204,7 +204,6 @@
             <h2>Hamburguers</h2>
             
             <div class="boxes">
-
                 <!-- hamburguer 1 -->
                 <div class="boxProduto">
                     <div class="boxImg">
@@ -230,6 +229,7 @@
                         <h3>Gourmet Burger - <strong>R$35,00</strong></h3>
                         <p>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!</p>
                         <button class="rounded-3">Pedir</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="rounded-3">Ver Detalhes</button>
                     </div>
                 </div>
 
@@ -242,10 +242,12 @@
                     <div class="boxTexto">
                         <h3>Defumado BBQ Burger - <strong>R$29,00</strong></h3>
                         <p>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</p>
-                        <button>Pedir</button>
+                        <button class="rounded-3">Pedir</button>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="rounded-3">Ver Detalhes</button>
                     </div>
                 </div>
             </div>
+
 
             <!-- hamburguer 1 - modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -265,12 +267,24 @@
                                     <h6>Igredientes</h6>
                                 </div>
                                 
-                                <div class="row mx-3">
+                                <div class="row mb-3">
                                     <div class="col-2">
                                         <img src="imagens/icones/pao.png" class="img-fluid" alt="Pão bola">
                                     </div>
                                     <div class="col-5 d-flex align-items-center">
                                         <h6>Pão bola</h6>
+                                    </div>
+                                    <div class="col-3 d-flex">
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-2">
+                                        <img src="imagens/icones/queijo.png" class="img-fluid" alt="queijo">
+                                    </div>
+                                    <div class="col-5 d-flex align-items-center">
+                                        <h6>Queijo</h6>
                                     </div>
                                     <div class="col-3 d-flex">
                                         <button type="button" class="btn btn-danger">Remover</button>
@@ -311,6 +325,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+        </section>
+
+        <section id="acomp">
+            <h2>Acompanhamentos</h2>
+
+            <div class="boxes">
+                <!-- acompanhamento 1 -->
+                <div class="boxProduto">
+                    <div class="boxImg">
+                        <img src="imagens/acomp01.png" alt="Fritas" class="imagemProduto">
+                    </div>
+                    
+                    <div class="boxTexto">
+                        <h3>Fritas - <strong>R$15,00</strong></h3>
+                        <p>Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.</p>
+                        <button class="rounded-3">Pedir</button>
+                    </div>
+
+                </div>
+
+                
             </div>
 
         </section>
