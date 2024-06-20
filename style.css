@@ -83,3 +83,7 @@ button {
     border-radius:  var(--arredondamentoBordas);
     width: 150px;
 }
+
+.modal h6{
+    color: black;
+}
