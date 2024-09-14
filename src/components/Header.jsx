@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Colors } from './Colors'
 import React, { useState, useEffect } from 'react'
+import CartCard from './CartCard'
 
 const StyledHeader = styled.div`
     background-color: ${Colors.darkGray};
@@ -93,15 +94,20 @@ const CartSidebar = styled.div`
     display: flex;
     flex-direction: column;
     position: fixed;
-    padding: 40px 20px;
+    padding: 60px 20px;
     top: 0;
-    right: -250px;
-    width: 250px;
+    right: -35%;
+    width: 35%;
     height: 100%;
     background: #333;
     transition: right 0.3s;
     overflow: hidden;
     z-index: 999; 
+
+    @media (max-width: 768px) {
+        right: -250px;
+        width: 250px;
+    }
 
     &.open {
         right: 0;
@@ -163,7 +169,7 @@ export default function Header() {
 
             <CartSidebar className={`cart-sidebar ${cartIsOpen ? 'open' : ''}`}>
                 <CloseButton onClick={toggleCart} className={cartIsOpen ? '' : 'closed'}>×</CloseButton>
-                <p>elementos</p>
+                <CartCard imgSource="src\assets\imagens\burger01.png"></CartCard>
             </CartSidebar>
         </StyledHeader>
     )
